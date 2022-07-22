@@ -1,0 +1,33 @@
+{
+	"name": "@icese7en/eslint-config-react",
+	"version": "1.1.0",
+	"description": "",
+	"keywords": [
+		"config",
+		"eslint",
+		"icese7en",
+		"react"
+	],
+	"homepage": "https://github.com/icese7en/configs",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/icese7en/configs.git"
+	},
+	"license": "MIT",
+	"author": "icese7en <icese7en@gmail.com>",
+	"main": "lib/index.js",
+	"files": [
+		"lib"
+	],
+	"dependencies": {
+		"@icese7en/eslint-config": "workspace:*",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-react": "^7.30.1",
+		"eslint-plugin-react-hooks": "^4.6.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

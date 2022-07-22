@@ -1,0 +1,6 @@
+{
+	"extends": "@icese7en/tsconfig/strict.json",
+	"compilerOptions": {
+		"jsx": "react"
+	}
+}
