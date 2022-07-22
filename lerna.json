@@ -1,0 +1,12 @@
+{
+	"npmClient": "pnpm",
+	"version": "independent",
+	"command": {
+		"version": {
+			"allowBranch": "main",
+			"conventionalCommits": true,
+			"exact": true,
+			"message": "build: publish %s"
+		}
+	}
+}

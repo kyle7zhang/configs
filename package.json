@@ -1,0 +1,51 @@
+{
+	"name": "@icese7en/configs",
+	"version": "1.1.0",
+	"private": true,
+	"description": "",
+	"keywords": [],
+	"license": "ISC",
+	"author": "",
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint packages",
+		"prepare": "husky install",
+		"release": "pnpm lint && lerna publish"
+	},
+	"lint-staged": {
+		"*.{json,md}": "prettier --write",
+		"!(test)/**/*.js": "eslint --fix",
+		".*.js": "eslint --fix",
+		"package.json": "sort-package-json"
+	},
+	"prettier": "@icese7en/prettier-config",
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"@icese7en/eslint-config": "workspace:*",
+		"@icese7en/eslint-config-prettier": "workspace:*",
+		"@icese7en/eslint-config-prettier-react": "workspace:*",
+		"@icese7en/eslint-config-prettier-typescript-react": "workspace:*",
+		"@icese7en/eslint-config-react": "workspace:*",
+		"@icese7en/eslint-config-typescript": "workspace:*",
+		"@icese7en/prettier-config": "workspace:*",
+		"@icese7en/tsconfig": "workspace:*",
+		"@lerna-lite/cli": "^1.6.0",
+		"@microsoft/rush": "^5.75.0",
+		"@types/react": "^18.0.15",
+		"@types/react-dom": "^18.0.6",
+		"eslint": "^8.20.0",
+		"eslint-plugin-import": "^2.26.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"sort-package-json": "^1.57.0",
+		"typescript": "^4.7.4"
+	},
+	"packageManager": "pnpm@7.5.0"
+}

@@ -1,0 +1,28 @@
+{
+	"name": "@icese7en/eslint-config-prettier-typescript",
+	"version": "1.2.0",
+	"description": "",
+	"keywords": [
+		"eslint",
+		"config",
+		"icese7en"
+	],
+	"homepage": "https://github.com/icese7en/configs",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/icese7en/configs.git"
+	},
+	"license": "MIT",
+	"author": "icese7en <icese7en@gmail.com>",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"@icese7en/eslint-config-prettier": "workspace:*",
+		"@icese7en/eslint-config-typescript": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

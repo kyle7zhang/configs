@@ -1,0 +1,24 @@
+{
+	"name": "@icese7en/tsconfig",
+	"version": "1.2.0",
+	"description": "",
+	"keywords": [
+		"eslint",
+		"config",
+		"icese7en"
+	],
+	"homepage": "https://github.com/icese7en/configs",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/icese7en/configs.git"
+	},
+	"license": "MIT",
+	"author": "icese7en <icese7en@gmail.com>",
+	"files": [
+		"base.json",
+		"strict.json"
+	],
+	"publishConfig": {
+		"access": "public"
+	}
+}

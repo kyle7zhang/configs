@@ -1,0 +1,8 @@
+# MacOS Desktop Services Store
+.DS_Store
+
+# jetbrains IntelliJ IDEA config
+.idea
+
+# npm node modules
+node_modules
