@@ -1,6 +1,10 @@
 {
 	"extends": "@icese7en/tsconfig/strict.json",
+	"include": ["./test/**/*.ts", "./test/**/*.tsx"],
 	"compilerOptions": {
-		"jsx": "react"
+		"useDefineForClassFields": true,
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"jsx": "react",
+		"allowSyntheticDefaultImports": true
 	}
 }

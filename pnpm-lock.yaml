@@ -10,17 +10,25 @@ importers:
       '@icese7en/eslint-config-prettier': workspace:*
       '@icese7en/eslint-config-prettier-react': workspace:*
       '@icese7en/eslint-config-prettier-typescript-react': workspace:*
+      '@icese7en/eslint-config-react': workspace:*
       '@icese7en/eslint-config-typescript': workspace:*
       '@icese7en/prettier-config': workspace:*
       '@icese7en/tsconfig': workspace:*
       '@lerna-lite/cli': ^1.6.0
+      '@types/react': ^18.0.15
+      '@types/react-dom': ^18.0.6
       eslint: ^8.20.0
       eslint-plugin-import: ^2.26.0
       husky: ^8.0.1
       lint-staged: ^13.0.3
       prettier: ^2.7.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
       sort-package-json: ^1.57.0
       typescript: ^4.7.4
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
@@ -28,10 +36,13 @@ importers:
       '@icese7en/eslint-config-prettier': link:packages/eslint-config-prettier
       '@icese7en/eslint-config-prettier-react': link:packages/eslint-config-prettier-react
       '@icese7en/eslint-config-prettier-typescript-react': link:packages/eslint-config-prettier-typescript-react
+      '@icese7en/eslint-config-react': link:packages/eslint-config-react
       '@icese7en/eslint-config-typescript': link:packages/eslint-config-typescript
       '@icese7en/prettier-config': link:packages/prettier-config
       '@icese7en/tsconfig': link:packages/tsconfig
       '@lerna-lite/cli': 1.6.0
+      '@types/react': 18.0.15
+      '@types/react-dom': 18.0.6
       eslint: 8.21.0
       eslint-plugin-import: 2.26.0_eslint@8.21.0
       husky: 8.0.1
@@ -50,7 +61,7 @@ importers:
 
   packages/eslint-config-prettier:
     specifiers:
-      '@icese7en/eslint-config': workspace:1.1.0
+      '@icese7en/eslint-config': workspace:*
       eslint-config-prettier: ^8.5.0
       eslint-plugin-prettier: ^4.2.1
     dependencies:
@@ -60,31 +71,31 @@ importers:
 
   packages/eslint-config-prettier-react:
     specifiers:
-      '@icese7en/eslint-config-prettier': workspace:1.1.0
-      '@icese7en/eslint-config-react': workspace:1.1.0
+      '@icese7en/eslint-config-prettier': workspace:*
+      '@icese7en/eslint-config-react': workspace:*
     dependencies:
       '@icese7en/eslint-config-prettier': link:../eslint-config-prettier
       '@icese7en/eslint-config-react': link:../eslint-config-react
 
   packages/eslint-config-prettier-typescript:
     specifiers:
-      '@icese7en/eslint-config-prettier': workspace:1.1.0
-      '@icese7en/eslint-config-typescript': workspace:1.1.0
+      '@icese7en/eslint-config-prettier': workspace:*
+      '@icese7en/eslint-config-typescript': workspace:*
     dependencies:
       '@icese7en/eslint-config-prettier': link:../eslint-config-prettier
       '@icese7en/eslint-config-typescript': link:../eslint-config-typescript
 
   packages/eslint-config-prettier-typescript-react:
     specifiers:
-      '@icese7en/eslint-config-prettier': workspace:1.1.0
-      '@icese7en/eslint-config-typescript-react': workspace:1.1.0
+      '@icese7en/eslint-config-prettier': workspace:*
+      '@icese7en/eslint-config-typescript-react': workspace:*
     dependencies:
       '@icese7en/eslint-config-prettier': link:../eslint-config-prettier
       '@icese7en/eslint-config-typescript-react': link:../eslint-config-typescript-react
 
   packages/eslint-config-react:
     specifiers:
-      '@icese7en/eslint-config': workspace:1.1.0
+      '@icese7en/eslint-config': workspace:*
       eslint-config-airbnb: ^19.0.4
       eslint-plugin-import: ^2.26.0
       eslint-plugin-jsx-a11y: ^6.6.1
@@ -100,7 +111,7 @@ importers:
 
   packages/eslint-config-typescript:
     specifiers:
-      '@icese7en/eslint-config': workspace:1.1.0
+      '@icese7en/eslint-config': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.31.0
       '@typescript-eslint/parser': ^5.31.0
       eslint-config-airbnb-typescript: ^17.0.0
@@ -112,8 +123,8 @@ importers:
 
   packages/eslint-config-typescript-react:
     specifiers:
-      '@icese7en/eslint-config-react': workspace:1.1.0
-      '@icese7en/eslint-config-typescript': workspace:1.1.0
+      '@icese7en/eslint-config-react': workspace:*
+      '@icese7en/eslint-config-typescript': workspace:*
     dependencies:
       '@icese7en/eslint-config-react': link:../eslint-config-react
       '@icese7en/eslint-config-typescript': link:../eslint-config-typescript
@@ -831,6 +842,28 @@ packages:
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
+    dev: true
+
+  /@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/react-dom/18.0.6:
+    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+    dependencies:
+      '@types/react': 18.0.15
+    dev: true
+
+  /@types/react/18.0.15:
+    resolution: {integrity: sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.0
+    dev: true
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.31.0_iudwqo2ttpyeiddzgf4mlaaok4:
@@ -1581,6 +1614,10 @@ packages:
       which: 2.0.2
     dev: true
 
+  /csstype/3.1.0:
+    resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
+    dev: true
+
   /damerau-levenshtein/1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: false
@@ -1953,7 +1990,6 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
-    dev: false
 
   /eslint-plugin-import/2.26.0_eslint@8.21.0:
     resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==}
@@ -4043,8 +4079,25 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react/18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
     dev: false
 
   /read-package-json-fast/2.0.3:
@@ -4252,6 +4305,12 @@ packages:
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
+
+  /scheduler/0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
 
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}

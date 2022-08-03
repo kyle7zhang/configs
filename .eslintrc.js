@@ -18,7 +18,11 @@ module.exports = {
 		},
 		{
 			files: ['*.tsx'],
-			extends: '@icese7en/prettier-typescript-react',
+			extends: [
+				'@icese7en/react/lib/a11y',
+				'@icese7en/react/lib/hooks',
+				'@icese7en/prettier-typescript-react',
+			],
 			parserOptions: {
 				project: ['tsconfig.json'],
 			},

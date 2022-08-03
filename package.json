@@ -6,6 +6,7 @@
 	"keywords": [],
 	"license": "ISC",
 	"author": "",
+	"type": "commonjs",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint packages",
@@ -19,6 +20,10 @@
 		"package.json": "sort-package-json"
 	},
 	"prettier": "@icese7en/prettier-config",
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.3",
 		"@commitlint/config-conventional": "^17.0.3",
@@ -26,10 +31,13 @@
 		"@icese7en/eslint-config-prettier": "workspace:*",
 		"@icese7en/eslint-config-prettier-react": "workspace:*",
 		"@icese7en/eslint-config-prettier-typescript-react": "workspace:*",
+		"@icese7en/eslint-config-react": "workspace:*",
 		"@icese7en/eslint-config-typescript": "workspace:*",
 		"@icese7en/prettier-config": "workspace:*",
 		"@icese7en/tsconfig": "workspace:*",
 		"@lerna-lite/cli": "^1.6.0",
+		"@types/react": "^18.0.15",
+		"@types/react-dom": "^18.0.6",
 		"eslint": "^8.20.0",
 		"eslint-plugin-import": "^2.26.0",
 		"husky": "^8.0.1",

@@ -6,6 +6,7 @@
  */
 module.exports = {
 	extends: ['@icese7en'],
+	plugins: ['react'],
 
 	// Rules overrides
 	rules: {
