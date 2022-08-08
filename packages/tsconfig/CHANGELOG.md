@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.3.0 (2022-08-08)
+
+### Features
+
+- init repo ([6ed3734](https://github.com/icese7en/configs/commit/6ed37347b525944575c0f79aa92eedee0479a0fe))
+
 # 1.2.0 (2022-08-01)
 
 ### Features
