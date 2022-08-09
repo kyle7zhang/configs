@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/icese7en/configs/compare/@icese7en/eslint-config@1.3.0...@icese7en/eslint-config@1.4.0) (2022-08-09)
+
+### Features
+
+- allow functions usage before it defines ([b0be936](https://github.com/icese7en/configs/commit/b0be936cff12973bd5081da8e033301d8ee61057))
+
 # 1.3.0 (2022-08-08)
 
 ### Features
