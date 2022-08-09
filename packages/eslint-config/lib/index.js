@@ -98,6 +98,18 @@ module.exports = {
 			},
 		],
 
+		/**
+		 * allow functions usage before it defines
+		 */
+		'no-use-before-define': [
+			'error',
+			{
+				functions: false,
+				classes: true,
+				variables: true,
+			},
+		],
+
 		// rules related to vite
 		...viteRules,
 		// rules related to eslint-plugin-import

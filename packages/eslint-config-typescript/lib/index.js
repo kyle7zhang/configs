@@ -46,6 +46,18 @@ module.exports = {
 		// ==================
 
 		/**
+		 * allow functions usage before it defines
+		 */
+		'@typescript-eslint/no-use-before-define': [
+			'error',
+			{
+				functions: false,
+				classes: true,
+				variables: true,
+			},
+		],
+
+		/**
 		 * Use type-only imports as possible
 		 *
 		 * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-imports.md
