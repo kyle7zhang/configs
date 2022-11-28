@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/icese7en/configs/compare/@icese7en/eslint-config@1.4.0...@icese7en/eslint-config@1.5.0) (2022-11-28)
+
+### Features
+
+- update prettier typescript rules ([a9916ef](https://github.com/icese7en/configs/commit/a9916efab03c39c8f6787ab018ec5fd2c9aa7c93))
+
 # [1.4.0](https://github.com/icese7en/configs/compare/@icese7en/eslint-config@1.3.0...@icese7en/eslint-config@1.4.0) (2022-08-09)
 
 ### Features
