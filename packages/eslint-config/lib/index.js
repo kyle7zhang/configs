@@ -110,6 +110,27 @@ module.exports = {
 			},
 		],
 
+		/**
+		 * allow control characters in regular expressions
+		 *
+		 * @see https://eslint.org/docs/latest/rules/no-control-regex
+		 */
+		'no-control-regex': 0,
+
+		/**
+		 * allow use of the RegExp constructor
+		 *
+		 * @see https://eslint.org/docs/latest/rules/prefer-regex-literals#rule-details
+		 */
+		'prefer-regex-literals': 0,
+
+		/**
+		 * disallow assignment operators in conditional expressions except if they are enclosed in parentheses
+		 *
+		 * @see https://eslint.org/docs/latest/rules/no-cond-assign#rule-details
+		 */
+		'no-cond-assign': ['error', 'except-parens'],
+
 		// rules related to vite
 		...viteRules,
 		// rules related to eslint-plugin-import
