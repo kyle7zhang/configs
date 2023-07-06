@@ -11,11 +11,11 @@ const airbnbTypescript = require('eslint-config-airbnb-typescript/lib/shared');
  */
 module.exports = {
 	extends: [
-		'@icese7en',
 		// Enable all the recommended rules for @typescript-eslint/eslint-plugin
 		'plugin:@typescript-eslint/recommended',
 		// Add typescript settings for `eslint-plugin-import`
 		'plugin:import/typescript',
+		'@icese7en',
 	],
 
 	// Use @typescript-eslint/eslint-plugin
