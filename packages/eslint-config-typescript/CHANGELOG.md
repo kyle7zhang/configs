@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/icese7en/configs/compare/@icese7en/eslint-config-typescript@1.4.1...@icese7en/eslint-config-typescript@1.5.0) (2023-07-06)
+
+### Features
+
+- update dependencies and devDependencies ([d32e674](https://github.com/icese7en/configs/commit/d32e67410f8525644348e1e9e3abbb3340e79690))
+
 ## [1.4.1](https://github.com/icese7en/configs/compare/@icese7en/eslint-config-typescript@1.4.0...@icese7en/eslint-config-typescript@1.4.1) (2022-11-28)
 
 **Note:** Version bump only for package @icese7en/eslint-config-typescript
